@@ -1,0 +1,39 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress",
+    "deploy": "node-deploy ${pwd}",
+    "linkall": "npm link node-deploy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "babel-watch -L src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-watch": "^7.4.1",
+    "node-deploy": "../node-deploy"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.5",
+    "apollo-server": "^2.25.1",
+    "apollo-server-express": "^2.25.1",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "lodash": "^4.17.21",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
